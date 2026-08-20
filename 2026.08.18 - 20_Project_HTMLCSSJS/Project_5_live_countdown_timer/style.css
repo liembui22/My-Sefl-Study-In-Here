@@ -6,7 +6,7 @@ body{
     height: 100vh;
     justify-content: center;
     font-family: 'BeVietnamPro', sans-serif;
-    background-color: #ffd10c;
+    background-color: #f59223;
 } 
 
 h2, .countdown{
@@ -21,11 +21,12 @@ h2, .countdown{
 
 .countdown{
     margin: 30px;
-    background-color: #f59322;
+    background-color: #ffd10c;
     padding:5px;
     color: #fff;
     width: 100%;
     height: 120px;
+    background-color: rgba(255,209,12,0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,4 +36,36 @@ h2, .countdown{
     margin: 0 15px;
     font-size: 2.5em;
     font-weight: 500;
+    margin-top: -25px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+.countdown div::before{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    font-size:.35em;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+
+}
+
+.countdown #day::before{
+    content: "Days";
+}
+.countdown #hour::before{
+    content: "Hours";
+}
+.countdown #minute::before{
+    content: "Minutes";
+}
+.countdown #second::before{
+    content: "Second";
 }
