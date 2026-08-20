@@ -1,0 +1,62 @@
+body{
+    background-color: #ffd10c;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Be Vietnam", dancing script, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1{
+    color: #323232;
+}
+
+.curency-converter{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.currency-container select{
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.currency-container input{
+    border:#323232;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.exchange-rate{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #323232;
+}
+
+select:focus, input:focus{
+    outline: none;
+    fill-rule: #4CAF50;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}

@@ -1,0 +1,38 @@
+body{
+    margin : 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    font-family: 'BeVietnamPro', sans-serif;
+    background-color: #ffd10c;
+}
+
+h2, .countdown{
+    color: #232323;
+}
+
+.year{
+    font-size: 5em;
+    font-weight: bold;
+    color: #232323;
+}
+
+.countdown{
+    margin: 30px;
+    background-color: #f59322;
+    padding:5px;
+    color: #fff;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown div{
+    margin: 0 15px;
+    font-size: 2.5em;
+    font-weight: 500;
+}

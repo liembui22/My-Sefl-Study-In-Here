@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Currency Converter</h1>
+
+        <div class="currency-container">
+
+            <select id="currency-first">
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">British Pound</option>
+                <option value="VND">Vietnamese Dong</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="CAD">Canadian Dollar</option>
+                <option value="CHF">Swiss Franc</option>
+                <option value="NZD">New Zealand Dollar</option>
+            </select>
+
+            <input type="number" id="worth-first" value="" min="0" placeholder="Enter amount">
+        </div>
+
+        <div class="currency-container">
+
+            <select id="currency-second">
+                <option value="VND">Vietnamese Dong</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">British Pound</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="CAD">Canadian Dollar</option>
+                <option value="CHF">Swiss Franc</option>
+                <option value="NZD">New Zealand Dollar</option>
+            </select>
+
+            <input type="number" id="worth-second" value="" min="0" disabled>
+        </div>
+        
+        <p class="exchange-rate" id="exchange-rate">Exchange Rate: 1 USD = 24.000 VND</p>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
