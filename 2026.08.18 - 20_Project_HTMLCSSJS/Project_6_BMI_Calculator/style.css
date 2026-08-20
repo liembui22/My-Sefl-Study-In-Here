@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
 body {
   margin: 0;
   background: linear-gradient(135deg,#f59322, #ffd10c);
@@ -5,5 +7,5 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  font-family:  sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }

@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
 body{
     background-color: #ffd10c;
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    font-family: "Be Vietnam", dancing script, sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     margin: 0;
     padding: 0;
+}
+
+input,
+select {
+    font-family: inherit;
 }
 
 .container{

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
 body {
     display:flex;
     justify-content:center;
@@ -5,7 +7,7 @@ body {
     align-items:center;
     margin:0;
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .password-container {
@@ -79,7 +81,7 @@ bnt:active {
     align-items: center;
 
     color: #f8fafc;
-    font-family: Arial, sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     font-size: 15px;
     font-weight: 600;
     line-height: 1.4;
@@ -99,4 +101,9 @@ bnt:active {
     opacity: 0;
     transform: translateX(420px);
     pointer-events: none;
+}
+
+input,
+button {
+    font-family: inherit;
 }

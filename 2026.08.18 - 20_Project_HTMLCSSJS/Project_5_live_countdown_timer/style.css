@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
 body{
     margin : 0;
     padding:0;
@@ -6,7 +8,7 @@ body{
     align-items: center;
     height: 100vh;
     justify-content: center;
-    font-family: 'BeVietnamPro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     background-color: #f59223;
     overflow: hidden;
 } 
@@ -23,14 +25,14 @@ h2{
     text-transform: uppercase;
     font-style: italic;
     letter-spacing: 4px;
-    font-family: 'BeVietnamPro', sans-serif;
+    font-family: inherit;
 }
 
 .year{
     font-size: 5em;
     font-weight: bold;
     color: #232323;
-    font-family: 'SVN-Hemi Head';
+    font-family: inherit;
 }
 
 .countdown{
