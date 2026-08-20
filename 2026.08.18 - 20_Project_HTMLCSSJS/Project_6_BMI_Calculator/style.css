@@ -4,9 +4,54 @@ body {
   margin: 0;
   background: linear-gradient(135deg,#f59322, #ffd10c);
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   font-family: "Be Vietnam Pro", sans-serif;
-  padding: 0;
+}
+
+.container{
+  background-color: #ffd10c;
+  color: #232323;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(35,35,35,0.5)  ;
+}
+
+.input{
+  padding: 10px 20px;
+  font-size: 18px;
+  background: rgba(255,255,255,.4);
+  border-color: rgba(255,255,255,.5);
+  margin: 10px;
+}
+
+.btn{
+  background-color: #f59322;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 0 0 4px rgba(35,35,35,.3);
+  cursor: pointer;
+}
+
+.btn:hover{
+  box-shadow: 0 0 8px rgba(35,35,35,.3);
+  transition:all 300ms ease;
+}
+
+
+.condition{
+  display:flex;
+  align-items: center ;
+  margin: 0;
+  gap: 8px;
+}
+.condition .info-text {
+  margin: 10px;
+  font-size: 20px;
 }
