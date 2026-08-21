@@ -78,6 +78,8 @@ img{
     z-index: 4;
 }
 
+
+
 .arrows div{
     background-color: white;
     width: 7px;
@@ -88,4 +90,13 @@ img{
     z-index: 3;
     border-radius: 50% 50% 0 0;
     box-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+
+.arrows .hour{
+    height: 80px;
+    transform: rotate(30deg);
+}
+.arrows .second{
+    transform: rotate(250deg);
+    background-color: goldenrod;
 }
