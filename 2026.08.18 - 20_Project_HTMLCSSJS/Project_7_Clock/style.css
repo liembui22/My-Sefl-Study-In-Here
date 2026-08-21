@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #ffd10c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img{
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 60px;
+    z-index: 2;
+}
+
+.clock{
+    position: relative;
+    background-color: #f59322;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid #232323;
+    box-shadow: 1px 1px 4px rgba(35,35,35,.7);
+}
+
+.number div{
+    position: absolute;
+    font-size: 27px;
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+
+.twelve{
+    top: 6px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.three{
+    right: 6px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.six{
+    bottom: 6px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.nine{
+    left: 6px;
+    top: 50%;
+    transform:  translateY(-50%);
+}
