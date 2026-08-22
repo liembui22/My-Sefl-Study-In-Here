@@ -4,6 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: 1s;
 }
 
 
@@ -33,11 +34,12 @@ body{
 }
 
 .input:checked + .label{
-    background-color: #232323;
+    background-color: #fff;
 }
 .input:checked + .label .circle{
     animation: toggleOn .4s
     linear forwards;
+    background-color: #232323;
 }
 
 
