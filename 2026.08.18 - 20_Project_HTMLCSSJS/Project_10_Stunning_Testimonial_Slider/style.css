@@ -19,6 +19,7 @@ body{
     margin:5px;
     color: #232323;
     position: relative;
+    transition:cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .text{
