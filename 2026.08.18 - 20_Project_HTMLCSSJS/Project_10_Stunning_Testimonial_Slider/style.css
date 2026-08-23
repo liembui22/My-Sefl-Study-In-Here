@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.testimonial-container{
+    width:500px;
+    height:100px;
+    background-color: #ffd10c;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(35,35,35,0.6);
+    min-width: 400px;
+    padding: 70px 20px;
+    margin:5px;
+    color: #232323;
+    position: relative;
+}
+
+.text{
+    font-size: 18px;
+    text-align: justify;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.username{
+    font-size: 13px;
+    font-weight: bold;
+    
+}
