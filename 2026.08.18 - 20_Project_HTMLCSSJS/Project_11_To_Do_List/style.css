@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffd10c;
+    background-color: #f59322;
 }
 
 .form{
@@ -11,8 +11,9 @@ body{
     top: 30%;
     box-shadow: 0 4px 8px rgba(35,35,35,.4);
     width: 400px;
-    background-color:#fff;
+    background-color:#ffd10c;
     border-radius: 10px;
+
 }
 
 .input{
@@ -22,7 +23,7 @@ body{
     border-radius: 10px 10px 0 0;
     border: none;
     font-size: 20px;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .input::placeholder{
@@ -39,7 +40,7 @@ body{
     padding: 20px;
     font-family: cursive;
     border-top: dotted;
-    border-color: darkgrey;
+    border-color: #232323;
     position: relative;
 }
 
@@ -51,11 +52,19 @@ body{
     transform: translateY(-50%);
     cursor: pointer;
 }
-.list li .fa-check-square{
+.list li .fa-square-check{
     color: green;
     position: absolute;
     right: 40px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+}
+
+.list li.checked{
+    color: lightgrey;
+    text-decoration: line-through;
+}
+.list li.checked .fa-square-check{
+    color: lightgrey;
 }
