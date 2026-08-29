@@ -1,3 +1,4 @@
+// khai bien
 const inputEl = document.querySelector('.input')
 const formEl = document.querySelector('.form')
 const ulEl = document.querySelector(".list")
@@ -32,6 +33,7 @@ function toDoList(task){
     ulEl.appendChild(liEl)
     inputEl.value =""
 // tạo nút check
+
     const checkBtnEl = document.createElement("div")
     checkBtnEl.innerHTML = `
     <i class="fa-solid fa-square-check">
