@@ -1,0 +1,11 @@
+Source edit tu dong/
+├── Tập Luyện trong Phòng Nai Gym/        (footage tu quay tai phong - uu tien)
+├── Sức khỏe, đau mỏi, nghỉ ngơi/
+├── Tập tại nhà, ngoài trời, thể thao khác/
+├── Đo lường, thời gian, ghi chép/
+├── Đồ Ăn và dinh dưỡng/
+├── SFX/                                   (whoosh, hit + nhac nen magnific-*, musicword-*)
+└── SRT N clip/                            (Compound Clip n_01.srt da sua chinh ta)
+
+Nguon free: Pexels / Pixabay / Mixkit / Coverr / Videvo (b-roll), Pixabay Music / YouTube Audio Library / Uppbeat (nhac),
+Pixabay SFX / Mixkit / Freesound / Zapsplat (SFX). Video ngang >=720p, 5-10s, khong watermark.

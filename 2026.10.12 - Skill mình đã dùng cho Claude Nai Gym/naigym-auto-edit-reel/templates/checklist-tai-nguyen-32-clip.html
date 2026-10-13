@@ -1,0 +1,264 @@
+<title>Tài nguyên 32 clip NaiGym</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;0,800;1,800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; template summary → shared assets → per-clip checklist cards */
+:root{
+  --bg:#f5f5f2; --surface:#ffffff; --fg:#17181a; --muted:#5e6166; --line:#dedfd9;
+  --accent:#c8102e; --accent-soft:#fbe7ea; --ok:#1f7a4d; --ok-soft:#e3f3ea;
+  --display:"Be Vietnam Pro",system-ui,sans-serif; --body:"Be Vietnam Pro",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121315; --surface:#1b1c1f; --fg:#ececea; --muted:#9a9da3; --line:#2c2e32;
+  --accent:#ff4d63; --accent-soft:#3a1a20; --ok:#5fd39a; --ok-soft:#173326; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121315; --surface:#1b1c1f; --fg:#ececea; --muted:#9a9da3; --line:#2c2e32;
+  --accent:#ff4d63; --accent-soft:#3a1a20; --ok:#5fd39a; --ok-soft:#173326; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55;padding-inline:16px;padding-block:28px 64px}
+.wrap{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:36px}
+h1{font-family:var(--display);font-weight:800;font-style:italic;font-size:clamp(28px,5vw,40px);line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1 span{color:var(--accent)}
+h2{font-size:20px;font-weight:800;margin:0 0 12px;text-wrap:balance}
+p{margin:0}
+.lede{color:var(--muted);max-width:65ch;margin-top:10px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.progress{display:flex;align-items:center;gap:12px;margin-top:18px;flex-wrap:wrap}
+.bar{flex:1;min-width:160px;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
+.count{font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.template{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.tcard{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.tcard b{font-size:14px}
+.tcard .tc{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.tcard p{font-size:14px;color:var(--muted)}
+pre{font-family:var(--mono);font-size:13px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;overflow-x:auto;margin:0;line-height:1.6}
+.rules{margin:12px 0 0;padding-left:20px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.toolbar button{font:inherit;font-size:13px;font-weight:500;padding:6px 12px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.toolbar button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.toolbar button:focus-visible,.item input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.list{display:flex;flex-direction:column;gap:12px}
+.clip{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.clip.done{border-color:var(--ok)}
+.chead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.num{font-family:var(--mono);font-weight:500;font-size:13px;color:var(--accent);background:var(--accent-soft);padding:2px 8px;border-radius:6px;font-variant-numeric:tabular-nums}
+.clip.done .num{color:var(--ok);background:var(--ok-soft)}
+.ctitle{font-weight:700;font-size:16px;min-width:0;flex:1}
+.flag{font-size:12px;color:var(--muted);font-style:italic}
+.item{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;padding:8px 0;border-top:1px solid var(--line)}
+.item input{width:18px;height:18px;margin-top:2px;accent-color:var(--ok);cursor:pointer}
+.item .what{min-width:0}
+.item .desc{font-weight:500}
+.item.checked .desc{text-decoration:line-through;color:var(--muted)}
+.meta{display:flex;gap:6px 14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-top:2px}
+.meta code{font-family:var(--mono);font-size:12px;color:var(--fg);background:var(--bg);padding:1px 6px;border-radius:4px;word-break:break-all}
+.kw{font-family:var(--mono);font-size:12px}
+footer{color:var(--muted);font-size:13px}
+@media (prefers-reduced-motion: reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">NaiGym · 40 clip · Timeline 1</div>
+    <h1>Tài nguyên cho <span>clip 2–32</span></h1>
+    <p class="lede">Danh sách dựng theo edit mẫu của clip 1 và 2 note bạn để trên timeline. Mỗi clip cần 3 b-roll khớp với tiêu đề, cộng bộ nhạc và SFX dùng chung. Tìm được file nào thì đặt đúng tên và tick vào ô.</p>
+    <div class="progress"><div class="bar"><i id="bar"></i></div><span class="count" id="count"></span></div>
+  </header>
+
+  <section>
+    <h2>Khuôn mẫu lấy từ clip 1</h2>
+    <div class="template">
+      <div class="tcard"><b>Hook cao trào ở đầu</b><span class="tc">00:00 – 00:11</span><p>Cắt đoạn cao trào lên đầu, thêm âm thanh gây cấn. Chuyển cảnh smooth zoom, ưu tiên flash light có gắn SFX.</p></div>
+      <div class="tcard"><b>Tiêu đề + logo</b><span class="tc">V3 · V2</span><p>Essential Titles V2 (Be Vietnam Pro Black Italic) và logo ngang. Cả 32 clip đã có sẵn, không cần tìm thêm.</p></div>
+      <div class="tcard"><b>2–3 b-roll ở thân bài</b><span class="tc">00:18 – 00:53</span><p>B-roll 720p ở V3, phóng 1.4x. Mỗi lần chèn có SFX và chuyển cảnh ngẫu nhiên.</p></div>
+      <div class="tcard"><b>Nhạc nền + SFX</b><span class="tc">A2 · A3 · A4</span><p>Nhạc nền chạy suốt clip, whoosh ở A2. Hiện mới có clip 1 có nhạc, các clip sau cần thêm.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Thư mục và cách đặt tên</h2>
+<pre>Tai nguyen/
+├── Chung/
+│   ├── nhac_01.mp3 … nhac_05.mp3
+│   └── sfx_riser_01.wav, sfx_flash_01.wav, sfx_whoosh_01.wav …
+├── Clip02/
+│   ├── clip02_broll_01.mp4
+│   ├── clip02_broll_02.mp4
+│   └── clip02_broll_03.mp4
+├── Clip03/
+└── … Clip32/</pre>
+    <ul class="rules">
+      <li>Ưu tiên video ngang, từ 720p trở lên, dài 5–10 giây.</li>
+      <li>Từ khóa để tiếng Anh vì các kho stock tìm tốt hơn.</li>
+      <li>Thiếu cảnh nào thì để trống, mình sẽ dùng cảnh dự phòng trong thư mục Chung.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Checklist</h2>
+    <div class="toolbar" role="group" aria-label="Cách xem">
+      <button type="button" id="v-cat" aria-pressed="true">Gom theo chủ đề (collect 1 lần)</button>
+      <button type="button" id="v-clip" aria-pressed="false">Theo từng clip</button>
+    </div>
+    <p class="lede" id="cat-note" style="margin:0 0 14px">Mỗi dòng là một cảnh cần tải. Cảnh dùng cho 2 clip thì chỉ cần tải một lần, rồi chép ra đủ các tên file bên dưới. Nút “Chép từ khóa” chép cả nhóm để bạn dán vào kho stock.</p>
+    <div class="toolbar" role="group" aria-label="Lọc danh sách">
+      <button type="button" id="f-all" aria-pressed="true">Tất cả</button>
+      <button type="button" id="f-todo" aria-pressed="false">Còn thiếu</button>
+      <button type="button" id="f-done" aria-pressed="false">Đã đủ</button>
+    </div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <footer>Tiêu đề lấy từ Essential Titles trên timeline lúc 15:45 ngày 13/10. Tick lưu trên trình duyệt của bạn.</footer>
+</div>
+
+<script>
+const SHARED = {num:"Chung", title:"Nhạc nền và SFX dùng chung", items:[
+  ["Nhạc nền upbeat, motivational, cùng vibe với magnific-synergy-success (5 bài để xoay vòng)","motivational upbeat corporate success, gym workout energetic","nhac_01.mp3 … nhac_05.mp3"],
+  ["SFX gây cấn cho hook: riser / tension build","cinematic riser, suspense build up, tension rise","sfx_riser_01.wav, sfx_riser_02.wav"],
+  ["SFX nhấn khi vào hook: impact / boom / hit","cinematic impact hit, boom, braam","sfx_impact_01.wav, sfx_impact_02.wav"],
+  ["SFX flash light đi kèm chuyển cảnh flash","camera flash sound, flash transition whoosh","sfx_flash_01.wav"],
+  ["Bộ whoosh nhiều kiểu cho chuyển cảnh b-roll (thêm vào fast whoosh và whoosh hù đang có)","whoosh swoosh transition pack","sfx_whoosh_01.wav … sfx_whoosh_05.wav"],
+  ["3–5 b-roll gym chung làm cảnh dự phòng","gym workout b-roll, dumbbell, barbell, athlete training","chung_broll_01.mp4 …"]
+]};
+
+const CLIPS = [
+ [2,"Dừng tập gym một thời gian thì có bị mất cơ?",[["Cận cơ bắp khi đang tập tạ","bicep curl close up muscle"],["Người nằm sofa lướt điện thoại, bỏ tập","man lying on couch phone lazy"],["Lịch lật trang / thời gian trôi","calendar pages flipping time lapse"]]],
+ [3,"Không có thời gian thì tập bao nhiêu buổi/tuần thì hợp lí",[["Dân văn phòng bận rộn nhìn đồng hồ","busy businessman checking watch office"],["Đánh dấu lịch tập trong tuần","marking weekly planner calendar"],["Tập full body nhanh ở gym","quick full body workout gym"]]],
+ [4,"Ăn tối có gây tích mỡ không?",[["Bữa tối trên bàn ăn","dinner table eating at night"],["Ăn vặt khuya trước tủ lạnh","late night snacking fridge"],["Bữa ăn lành mạnh: cơm, gà, rau","healthy meal chicken rice vegetables"]]],
+ [5,"Tập gym bao lâu thì sẽ thấy kết quả rõ rệt",[["Soi gương gồng cơ ở gym","man flexing in gym mirror"],["Timelapse đồng hồ / thời gian","clock time lapse"],["Đo vòng bụng bằng thước dây","measuring waist tape"]]],
+ [6,"Tập cardio hay tập kháng lực sẽ giúp giảm mỡ nhanh hơn",[["Chạy máy chạy bộ","treadmill running gym"],["Squat với tạ đòn","barbell squat"],["Véo mỡ bụng","pinching belly fat"]]],
+ [7,"Có bắt buộc dùng Whey hoặc Creatine trong tập luyện hay không?",[["Lắc bình shaker whey","protein shake shaker bottle"],["Múc bột creatine","scoop creatine powder"],["Thực phẩm giàu đạm tự nhiên","eggs chicken high protein food"]]],
+ [8,"Hiểu rõ mức tạ nặng và việc đúng kỹ thuật",[["Lắp đĩa tạ nặng lên đòn","loading heavy plates barbell"],["HLV chỉnh form cho học viên","personal trainer correcting form"],["Đau lưng / chấn thương khi tập","gym injury back pain"]],"Tiêu đề trên timeline ghi “mức tạ năng”, mình hiểu là “nặng”"],
+ [9,"Nên tập cardio trước hay sau buổi tập luyện",[["Đạp xe tại chỗ ở gym","stationary bike gym"],["Tập tạ","weight lifting gym"],["Đồng hồ bấm giờ / smartwatch","stopwatch smartwatch workout"]]],
+ [10,"Nên tập gym tại nhà hay nên ra phòng gym",[["Tập tạ đơn trong phòng khách","home workout dumbbells living room"],["Phòng gym hiện đại đủ máy","modern gym interior machines"],["Chống đẩy tại nhà","push ups at home"]]],
+ [11,"Các bạn nhỏ tập tạ quá sớm thì có bị lùn hay không",[["Thiếu niên tập tạ","teenager lifting weights"],["Đo chiều cao trẻ em","child measuring height wall"],["Trẻ chơi bóng rổ","kids playing basketball"]]],
+ [12,"Người ăn thuần chay thì liệu có thể phát triển cơ bắp hay không?",[["Đồ chay: đậu hũ, các loại đậu","vegan food tofu beans"],["Bowl rau củ","vegan bowl salad"],["Vận động viên cơ bắp tập luyện","muscular athlete training"]]],
+ [13,"Tập bao lâu thì nên thay đổi giáo án tập",[["Ghi sổ tập","writing workout journal"],["Montage nhiều bài tập khác nhau","various gym exercises montage"],["Chán nản / chững lại ở gym","bored tired man gym"]]],
+ [14,"Người lớn tuổi thì có nên tập tạ hay không",[["Người lớn tuổi tập tạ nhẹ","senior man lifting dumbbells"],["Người già tập thể dục / yoga","elderly exercise yoga"],["Đau khớp gối","knee joint pain"]]],
+ [15,"Fasting training thì nó có ảnh hưởng lớn tới sức khỏe không",[["Đĩa trống và đồng hồ (nhịn ăn gián đoạn)","intermittent fasting empty plate clock"],["Tập buổi sáng sớm","early morning workout"],["Chóng mặt, mệt khi tập","dizzy tired during workout"]]],
+ [16,"Tập một thời gian cảm thấy rất hiệu quả nhưng không tăng cân",[["Bước lên cân","stepping on scale"],["Bữa ăn nhiều calo","big bulking meal plate"],["Soi gương kiểm tra vóc dáng","body check mirror"]]],
+ [17,"Một ngày thì nên nạp bao nhiêu gam protein",[["Thực phẩm giàu đạm","protein foods eggs meat"],["Cân thức ăn bằng cân bếp","food scale weighing chicken"],["App đếm macro trên điện thoại","tracking macros app phone"]]],
+ [18,"Có bắt buộc ăn kiêng thì tập gym mới hiệu quả",[["Salad ăn kiêng","diet salad"],["Đồ ăn nhanh / burger","fast food burger"],["Đĩa ăn cân bằng","balanced plate meal"]]],
+ [19,"Cảm nhẹ thì có nên kiên trì đi tập không",[["Người bị cảm hắt hơi","man sneezing cold tissues"],["Nghỉ ngơi uống trà trên giường","resting drinking tea in bed"],["Đi bộ nhẹ nhàng","light walking outdoors"]]],
+ [20,"Ngưng tập bao lâu thì sẽ bị mất cơ",[["Phòng gym vắng / tạ bỏ không","empty gym"],["Lịch / thời gian trôi","calendar time passing"],["Cận cơ tay","bicep close up"]],"Gần giống clip 2, nên chọn b-roll khác clip 2"],
+ [21,"Có nên tập nhiều hơn để đẩy nhanh quá trình",[["Tập cường độ cao đổ mồ hôi","intense workout sweating"],["Kiệt sức nằm sàn gym","exhausted on gym floor"],["Ngủ nghỉ phục hồi","sleeping recovery"]]],
+ [22,"Chỉ cảm nhận được một bên khi đẩy tạ có ảnh hưởng gì không",[["Đẩy ngực bench press","bench press"],["Đẩy tạ đơn một tay","single arm dumbbell press"],["Soi gương kiểm tra tư thế","mirror form check gym"]]],
+ [23,"Lợi ích của việc khởi động trước khi tập luyện",[["Khởi động xoay khớp, giãn cơ","warm up stretching"],["Nhảy dây khởi động","jump rope warm up"],["Căng cơ / chấn thương","muscle strain injury"]]],
+ [24,"Có nên sử dụng cafein trước buổi tập không",[["Pha cà phê espresso","espresso coffee brewing"],["Uống pre-workout","pre workout drink"],["Tập đầy năng lượng","energetic workout"]]],
+ [25,"Làm sao để đánh giá một buổi tập hiệu quả",[["Ghi chép sổ tập","workout log notebook"],["Smartwatch đo nhịp tim","smartwatch heart rate"],["Mồ hôi, cơ căng sau buổi tập","sweaty after workout"]]],
+ [26,"Sử dụng một chút carb nhanh hoặc đồ ngọt trước buổi tập",[["Ăn chuối","eating banana"],["Kẹo / bánh ngọt","candy sweets"],["Nước uống thể thao / nước ép","sports drink juice"]]],
+ [27,"Kỹ thuật nâng cao Drop Set là gì?",[["Đổi tạ đơn nhanh ở giá tạ","dumbbell rack drop set"],["Tháo đĩa tạ","removing weight plates"],["Gắng sức cuối hiệp","muscle failure last rep"]]],
+ [28,"Sore cơ đau quá thì có nên tập tiếp không",[["Xoa bóp cơ đau","sore muscle massage"],["Lăn foam roller","foam rolling"],["Giãn cơ","stretching"]],"Tiêu đề trên timeline ghi “Sổ cơ”, có thể bạn cần sửa"],
+ [29,"Tập gym và chơi thêm một môn thể thao khác có ảnh hưởng không",[["Đá bóng","playing football"],["Bơi lội","swimming"],["Cầu lông / chạy bộ","badminton running"]]],
+ [30,"Bữa ăn trước và sau tập có quan trọng không",[["Yến mạch trước tập","oatmeal breakfast"],["Bữa sau tập: cơm gà","post workout meal chicken rice"],["Hộp meal prep","meal prep containers"]]],
+ [31,"Bulking và Cutting có ý nghĩa như thế nào",[["Bữa ăn bulking nhiều","big meal bulking"],["Bữa ăn ít calo khi cutting","low calorie meal"],["Kẹp đo mỡ / bước lên cân","body fat caliper"]]],
+ [32,"Tăng testosterone tự nhiên có khả quan hay không",[["Ngủ đủ giấc","man sleeping"],["Squat / deadlift nặng","heavy deadlift"],["Trứng, hàu, thịt bò","eggs oysters beef"]]]
+];
+
+const KEY="naigym-tainguyen-v1";
+let state={}; try{state=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){state={}}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
+let filter="all";
+const pad=n=>String(n).padStart(2,"0");
+
+function groups(){
+  const g=[{id:"chung",num:"Chung",title:SHARED.title,items:SHARED.items.map((it,i)=>({id:"chung-"+i,desc:it[0],kw:it[1],file:it[2]}))}];
+  CLIPS.forEach(([n,t,b,flag])=>g.push({id:"c"+n,num:"Clip "+pad(n),title:t,flag,items:b.map((it,i)=>({id:`c${n}-${i}`,desc:"B-roll: "+it[0],kw:it[1],file:`Clip${pad(n)}/clip${pad(n)}_broll_${pad(i+1)}.mp4`}))}));
+  return g;
+}
+const G=groups();
+
+// Category view: [name, [[clip, idx], ...]] ; refs in the same inner array = one download reused
+const CATS=[
+ ["Tập luyện trong phòng gym",[[[2,0],[20,2]],[[3,2]],[[5,0]],[[6,0]],[[6,1]],[[8,0]],[[8,1]],[[9,0]],[[9,1]],[[10,1]],[[12,2]],[[13,1]],[[13,2]],[[15,1]],[[16,2]],[[20,0]],[[21,0]],[[21,1]],[[22,0]],[[22,1]],[[22,2]],[[24,2]],[[25,2]],[[27,0]],[[27,1]],[[27,2]],[[32,1]]]],
+ ["Tập tại nhà, ngoài trời, thể thao khác",[[[10,0]],[[10,2]],[[11,0]],[[11,1]],[[11,2]],[[14,0]],[[14,1]],[[19,2]],[[23,0]],[[23,1]],[[28,1]],[[28,2]],[[29,0]],[[29,1]],[[29,2]]]],
+ ["Đồ ăn và dinh dưỡng",[[[4,0]],[[4,1]],[[4,2]],[[7,0]],[[7,1]],[[7,2],[17,0]],[[12,0]],[[12,1]],[[15,0]],[[16,1],[31,0]],[[17,1]],[[18,0]],[[18,1]],[[18,2]],[[24,0]],[[24,1]],[[26,0]],[[26,1]],[[26,2]],[[30,0]],[[30,1]],[[30,2]],[[31,1]],[[32,2]]]],
+ ["Đo lường, thời gian, ghi chép",[[[2,2]],[[20,1]],[[3,0]],[[3,1]],[[5,1]],[[5,2]],[[9,2],[25,1]],[[13,0],[25,0]],[[16,0]],[[17,2]],[[31,2]]]],
+ ["Sức khỏe, đau mỏi, nghỉ ngơi",[[[2,1]],[[6,2]],[[8,2]],[[14,2]],[[15,2]],[[19,0]],[[19,1]],[[21,2],[32,0]],[[23,2]],[[28,0]]]]
+];
+const CLIPMAP={}; CLIPS.forEach(([n,t,b])=>CLIPMAP[n]=b);
+let view="cat";
+
+function copyText(text,btn){
+  const done=()=>{btn.textContent="Đã chép";setTimeout(()=>btn.textContent="Chép từ khóa",1500)};
+  try{navigator.clipboard.writeText(text).then(done,()=>fallback())}catch(e){fallback()}
+  function fallback(){const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");done()}catch(e){}ta.remove()}
+}
+
+function renderCats(list){
+  // shared group first, same as clip view
+  const sharedG=G[0];
+  const blocks=[{name:"Nhạc nền và SFX dùng chung",rows:sharedG.items.map(it=>({ids:[it.id],desc:it.desc,kw:it.kw,files:[it.file],clips:[]}))}];
+  CATS.forEach(([name,rows])=>blocks.push({name,rows:rows.map(refs=>{
+    const [c0,i0]=refs[0]; const b=CLIPMAP[c0][i0];
+    return {ids:refs.map(([c,i])=>`c${c}-${i}`),desc:b[0],kw:b[1],files:refs.map(([c,i])=>`Clip${pad(c)}/clip${pad(c)}_broll_${pad(i+1)}.mp4`),clips:refs.map(([c])=>c)};
+  })}));
+  blocks.forEach(bl=>{
+    const rows=bl.rows.filter(r=>{const d=r.ids.every(id=>state[id]); return filter==="all"||(filter==="todo"&&!d)||(filter==="done"&&d)});
+    if(!rows.length) return;
+    const allDone=bl.rows.every(r=>r.ids.every(id=>state[id]));
+    const el=document.createElement("article"); el.className="clip"+(allDone?" done":"");
+    const n=bl.rows.length;
+    el.innerHTML=`<div class="chead"><span class="num">${n} cảnh</span><span class="ctitle"></span><button type="button" class="copy" style="font:inherit;font-size:12.5px;padding:4px 10px;border-radius:99px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer">Chép từ khóa</button></div>`;
+    el.querySelector(".ctitle").textContent=bl.name;
+    el.querySelector(".copy").addEventListener("click",e=>copyText(bl.rows.map(r=>r.kw).join("\n"),e.currentTarget));
+    rows.forEach(r=>{
+      const checked=r.ids.every(id=>state[id]);
+      const row=document.createElement("label"); row.className="item"+(checked?" checked":"");
+      row.innerHTML=`<input type="checkbox"><span class="what"><span class="desc"></span><span class="meta"><span class="kw"></span><span class="cl"></span></span><span class="meta files"></span></span>`;
+      row.querySelector(".desc").textContent=r.desc+(r.ids.length>1?`  (dùng cho ${r.ids.length} clip)`:"");
+      row.querySelector(".kw").textContent="Từ khóa: "+r.kw;
+      row.querySelector(".cl").textContent=r.clips.length?"Clip "+r.clips.map(pad).join(", "):"";
+      const fw=row.querySelector(".files"); r.files.forEach(f=>{const c=document.createElement("code");c.textContent=f;fw.appendChild(c)});
+      const cb=row.querySelector("input"); cb.checked=checked;
+      cb.addEventListener("change",()=>{r.ids.forEach(id=>state[id]=cb.checked);save();render();});
+      el.appendChild(row);
+    });
+    list.appendChild(el);
+  });
+}
+
+function render(){
+  const list=document.getElementById("list"); list.innerHTML="";
+  document.getElementById("cat-note").hidden=view!=="cat";
+  if(view==="cat"){
+    let total=0,done=0; G.forEach(g=>g.items.forEach(it=>{total++; if(state[it.id]) done++;}));
+    document.getElementById("bar").style.width=(total?done/total*100:0)+"%";
+    document.getElementById("count").textContent=`${done}/${total} file đã có`;
+    renderCats(list); return;
+  }
+  let total=0,done=0;
+  G.forEach(g=>{
+    const gDone=g.items.every(it=>state[it.id]);
+    g.items.forEach(it=>{total++; if(state[it.id]) done++;});
+    if(filter==="todo"&&gDone) return;
+    if(filter==="done"&&!gDone) return;
+    const el=document.createElement("article"); el.className="clip"+(gDone?" done":"");
+    el.innerHTML=`<div class="chead"><span class="num">${g.num}</span><span class="ctitle"></span></div>`;
+    el.querySelector(".ctitle").textContent=g.title;
+    if(g.flag){const f=document.createElement("p");f.className="flag";f.textContent=g.flag;el.appendChild(f);}
+    g.items.forEach(it=>{
+      const row=document.createElement("label"); row.className="item"+(state[it.id]?" checked":"");
+      row.innerHTML=`<input type="checkbox" id="${it.id}"><span class="what"><span class="desc"></span><span class="meta"><span class="kw"></span><code></code></span></span>`;
+      row.querySelector(".desc").textContent=it.desc;
+      row.querySelector(".kw").textContent="Từ khóa: "+it.kw;
+      row.querySelector("code").textContent=it.file;
+      const cb=row.querySelector("input"); cb.checked=!!state[it.id];
+      cb.addEventListener("change",()=>{state[it.id]=cb.checked;save();render();});
+      el.appendChild(row);
+    });
+    list.appendChild(el);
+  });
+  document.getElementById("bar").style.width=(total?done/total*100:0)+"%";
+  document.getElementById("count").textContent=`${done}/${total} file đã có`;
+}
+["all","todo","done"].forEach(f=>document.getElementById("f-"+f).addEventListener("click",()=>{
+  filter=f; ["all","todo","done"].forEach(x=>document.getElementById("f-"+x).setAttribute("aria-pressed",x===f)); render();
+}));
+["cat","clip"].forEach(v=>document.getElementById("v-"+v).addEventListener("click",()=>{
+  view=v; ["cat","clip"].forEach(x=>document.getElementById("v-"+x).setAttribute("aria-pressed",x===v)); render();
+}));
+render();
+</script>

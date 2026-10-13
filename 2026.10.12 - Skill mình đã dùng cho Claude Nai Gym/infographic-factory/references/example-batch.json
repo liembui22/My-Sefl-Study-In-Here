@@ -1,0 +1,42 @@
+{
+  "platform": {"width": 1080, "height": 1080},
+  "carousels": [
+    {
+      "title": "Thứ tự nhóm cơ trong một buổi",
+      "caption": "Vào phòng nên tập tay trước hay squat trước?\n\nNhóm cơ lớn và bài nhiều khớp (squat, deadlift, đẩy ngực, kéo xà) nên tập trước khi còn sung sức. Bài cho cơ nhỏ để cuối buổi.\n\nCần PT sắp lại giáo án? Nhắn tin cho NaiGym.\n\n#naigymvietnam #tapgymdungcach #giaoan",
+      "slides": [
+        {"type": "hook", "layout": "chat", "image": "anh/khu-ta-don.jpg", "kicker": "TIN NHẮN HỘI VIÊN",
+         "messages": [
+           {"from": "member", "text": "Anh ơi, vào phòng em nên tập tay trước hay squat trước ạ?"},
+           {"from": "gym", "text": "Thứ tự có ảnh hưởng đó"}
+         ]},
+        {"type": "value", "format": "checklist", "heading": "Thứ tự [[trong một buổi]]",
+         "items": [
+           {"title": "Nhóm cơ lớn, bài nhiều khớp trước", "desc": "Squat, deadlift, đẩy ngực, kéo xà — lúc còn sung sức nhất"},
+           {"title": "Bài cho cơ nhỏ để sau", "desc": "Tay trước, tay sau, bắp chân…"},
+           {"title": "Ngoại lệ", "desc": "Một bài nhẹ đầu buổi cho nhóm cơ đang yếu rõ rệt"}
+         ],
+         "note": "Làm mỏi cơ nhỏ trước sẽ kéo tụt hiệu suất các bài chính."},
+        {"type": "cta", "layout": "split", "image": "anh/khu-ta.jpg",
+         "headline": "Lớn trước, nhỏ sau. [[Năng lượng]] cho bài đáng giá nhất.",
+         "cta_text": "Nhắn NaiGym để PT sắp lại giáo án", "channel": "dm_zalo",
+         "hashtags": "#naigymvietnam #giaoan"}
+      ]
+    },
+    {
+      "title": "Nước dừa sau tập",
+      "caption": "Nước dừa có thay được nước điện giải?\n\nBuổi tập trên 60–90 phút hoặc ra nhiều mồ hôi: nước dừa là lựa chọn ổn. Dưới 60 phút trong phòng máy lạnh: nước lọc là đủ.\n\nHỏi PT NaiGym nếu bạn hay bị chuột rút sau tập.\n\n#naigymvietnam #dinhduong #phuchoi",
+      "slides": [
+        {"type": "hook", "layout": "versus", "left": "Nước dừa", "right": "Nước điện giải", "headline": "Sau buổi tập, chọn cái nào?"},
+        {"type": "value", "format": "flow", "question": "Buổi tập trên 60–90 phút, hoặc đổ nhiều mồ hôi khi trời nóng?",
+         "yes": {"title": "Nước dừa là lựa chọn ổn", "desc": "Có kali, natri, magie và một ít carb."},
+         "no": {"title": "Nước lọc là đủ", "desc": "Dưới 60 phút trong phòng máy lạnh."},
+         "note": "Natri trong nước dừa thấp hơn nước điện giải thể thao."},
+        {"type": "cta", "layout": "solid", "theme": "yellow",
+         "headline": "Uống theo buổi tập, [[không theo trào lưu]].",
+         "subline": "Hay bị chuột rút, kiệt sức sau tập? Có thể bạn đang thiếu điện giải.",
+         "cta_text": "Hỏi PT NaiGym", "channel": "dm_zalo", "hashtags": "#naigymvietnam #dinhduong"}
+      ]
+    }
+  ]
+}

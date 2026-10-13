@@ -1,0 +1,12 @@
+Du an mau: DaVinci Resolve project "40 clip", timeline "Timeline 1 - Claude dung"
+29.97 fps (NDF), khung 1828x1332, start frame 108000 (01:00:00:00), end 148528
+Clip tho: C:\Users\TEN_USER\Downloads\40 reel clip\   (audio enhance: \Audio enhance\Compound Clip n.wav)
+Source: C:\Users\TEN_USER\Downloads\NaiGym Claude 11.10.2026\Source edit tu dong\
+Xuat: C:\Users\TEN_USER\Downloads\40 reel clip\Final\Clip NN.mp4 (H.265 Master MP4, burn sub)
+
+Track: V1 clip chinh (Compound Clip n) | V2 logo | V3 Essential Titles (Be Vietnam Pro Black Italic) | V4 b-roll
+       A1 thoai | A2 SFX whoosh | A3 nhac nen | ST1 phu de vang
+
+Ranh gioi 32 clip (frame start; clip n = B[n] .. B[n+1]-1):
+108000,109858,111522,113374,115157,116821,118271,120108,121194,122412,123227,124299,125579,126708,128156,129362,
+130601,131711,133367,134648,135821,137312,138497,139646,140566,141853,143104,143929,145131,146134,146996,147887,148528
